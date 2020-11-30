@@ -10,137 +10,201 @@
 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet  -->
 
 </head>
-
-<div class="container">
 <body>
-  <nav>Features
-  Team
-  Sign In
-</nav><!--/nav-->
+
+<!--<div class="container">-->
 
 
-<header>
+<!--<div class="wrapper">-->
 
-  <img src="./images/illustration-intro.png" alt="illustration intro">
-  <h1>All your files in one secure location, accessible anywhere.</h1>
+  <header>
+   <div class="wrapper">
+    <nav>
+    Features
+    Team
+    Sign In
+    </nav><!--/nav-->
 
-  <p>Fylo stores all your most important files in one secure location. Access them wherever
-  you need, share and collaborate with friends family, and co-workers.</p>
+      <article class="intro sm-container">
+        <img src="./images/illustration-intro.png" alt="illustration intro">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores all your most important files in one secure location. Access them wherever
+        you need, share and collaborate with friends family, and co-workers.</p>
+        <button class="button">Get Started</button>
+      </article>
+  </wrapper><!--/container-->
+  </header>
+
+      <section class="cards md-container">
+
+          <article class="card card1">
+              <img src="./images/icon-access-anywhere.svg" alt="acces anywhere image">
+              <h3> Access your files, anywhere</h3>
+              <p>The ability to use a smartphone, tablet, or computer to access your account means your
+              files follow you everywhere.</p>
+          </article><!--/card1-->
+
+          <article class="card cad2">
+              <img src="./images/icon-security.svg" alt="security image">
+              <h3>Security you can trust</h3>
+              <p>2-factor authentication and user-controlled encryption are just a couple of the security
+              features we allow to help secure your files.</p>
+          </article><!--/card2--->
+
+          <article class="card card3">
+              <img src="./images/icon-collaboration.svg" alt="collaboration image">
+              <h3>Real-time collaboration</h3>
+              <p>Securely share files and folders with friends, family and colleagues for live collaboration.
+              No email attachments required.</p>
+          </article><!--/card3-->
+
+          <article class="card card4">
+              <img src="./images/icon-any-file.svg" alt="any file type image">
+              <h3>Store any type of file</h3>
+              <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+              file types to be securely stored and shared.</p>
+          </article><!--/article-->
+      </section>
+
+<section class="productivity-container">
+  <div class="wrapper">
+        <section class="productivity">
+
+          <div class="prod prod-col1">
+          <img src="./images/illustration-stay-productive.png" alt="productivity img">
+          </div><!--/prod-sec1-->
+
+          <div class="prod prod-col2">
+          <h2>Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+          storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+          attachments required.</p>
+          See how Fylo works
+          </div><!--/prod-sec2-->
+  </div><!--/wrapper-->
+        </section><!--/productivity-->
+</section><!--/productivity-container-->
 
 
-  <button class="btn">Get Started</button>
 
-</header>
+  <section class="review-container">
+    <div class="wrapper">
 
-<section class="cards">
+    <section class="review">
 
-    <article class="card card1">
-    <h3> Access your files, anywhere</h3>
+            <div class="review-card rev-card1">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+                become a well-oiled collaboration machine.</p>
+            <div class="reviewer-info">
 
-    <p>The ability to use a smartphone, tablet, or computer to access your account means your
-    files follow you everywhere.</p>
-  </article><!--/card1-->
+                  <div class="reviewer-pic-info">
+                  <img src="./images/profile-1.jpg" title="reviewer">
+                  </div><!--/reviewer-pic-->
 
-  <article class="card cad2">
-    <h3>Security you can trust</h3>
+                  <div class="reviewer-name-info">
+                  <p class="reviewer-name">Satish Patel</p>
+                  <p class="revieer-title">Founder & CEO, Huddle</p>
+                 </div><!--/reviewer-name-info-->
+            </div><!--/reviewer-info-->
 
-    <p>2-factor authentication and user-controlled encryption are just a couple of the security
-    features we allow to help secure your files.</p>
-  </article><!--/card2--->
+                </div><!--/rev-card1-->
 
-  <article class="card card3">
-    <h3>Real-time collaboration</h3>
+                <div class="review-card rev-card2">
+                  <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+                  become a well-oiled collaboration machine.</p>
 
-    <p>Securely share files and folders with friends, family and colleagues for live collaboration.
-    No email attachments required.</p>
-  </article><!--/card3-->
+                  Bruce McKenzie
+                  Founder & CEO, Huddle
+               </div><!--/rev-card2-->
 
-  <article class="card card4">
-    <h3>Store any type of file</h3>
+                <div class="review-card rev-card3">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+                become a well-oiled collaboration machine.</p>
 
-    <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-    file types to be securely stored and shared.</p>
-  </article><!--/article-->
+                Iva Boyd
+                Founder & CEO, Huddle
+              </div><!--/rev-card3-->
+</div><!--/wrapper-->
+    </section><!--/section review-->
+  </section><!--/section-review-container-->
+
+<section class="early-access-container">
+
+    <div class="early-access-form">
+    <h2>Get early access today</h2>
+    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+    questions, our support team would be happy to help you.
+    </p>
+
+    <form>
+      <input type="email" id="email" placeholder="enter your email here" required>
+      <input type="submit" class="button" value="Get Started For Free">
+    </form>
+
+  </div><!--/early-access-container-->
 
 </section>
-<!--/test-->
+
+<section class="footer-container">
+    <div class="wrapper">
 
 
-
-<section class="productivity">
-
-<div class="prod prod-sec1">
-  <img src="./images/illustration-stay-productive.png" alt="productivity img">
-</div><!--/prod-sec1-->
-
-<div class="prod prod-sec2">
-      Stay productive, wherever you are
-
-      Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-      storage needs.
-
-      Securely share files and folders with friends, family and colleagues for live collaboration. No email
-      attachments required.
-
-      See how Fylo works
-</div><!--/prod-sec2-->
-
-</div><!--/productivity-->
-
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-  become a well-oiled collaboration machine.
-
-  Satish Patel
-  Founder & CEO, Huddle
-
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-  become a well-oiled collaboration machine.
-
-  Bruce McKenzie
-  Founder & CEO, Huddle
-
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-  become a well-oiled collaboration machine.
-
-  Iva Boyd
-  Founder & CEO, Huddle
-</section><!--/section-->
-
-
-<section>
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+          <div class="footer-col fc-1">
+             <img src="./images/logo.svg" alt="logo" title="logo">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+             dolore magna aliqua</p>
+           </div><!--/fc-1-->
+
+           <div class="footer-col fc-2">
+             <p class="phone">+1-543-123-4567</p>
+             <p class="email">example@fylo.com</p>
+           </div><!---/fc-2-->
+
+          <div class="footer-col fc-3">
+            <p>About Us</p>
+            <p>Jobs</p>
+            <p>Press</p>
+            <p>Blog</p>
+          </div><!--/fc-3-->
+
+           <div class="footer-col fc-4">
+             Contact Us
+             Terms
+             Privacy
+           </div><!--/fc-4-->
+
+           <div class="footer-col fc-5">
+             <ion-icon name="logo-facebook"></ion-icon>
+             <ion-icon name="logo-twitter"></ion-icon>
+             <ion-icon name="logo-instagram"></ion-icon>
+             <img src="#" title="" alt="">
+             <img src="#" title="" alt="">
+             <img src="#" title="" alt="">
+
+        </div><!--/fc-4-->
+
   </footer>
 
-</div>!--/container-->
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
+</div><!--/wrapper-->
+</div><!--/footer-container-->
+
+
+<!--</div>-->
+<!--/wrapper-->
+
+<!--</div><!-/container-->-->
+
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </body>
 </html>
